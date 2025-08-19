@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Piedra, Papel, Tijera, Spock, Lagarto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
-  <h1>Piedra, Papel, Tijera, Spock, Lagarto</h1>
+  <h1>
+    <span style="font-size:1.5em;">🎮</span> Piedra, Papel, Tijera, Spock, Lagarto
+  </h1>
   <div class="options">
-    <button class="option-btn" onclick="play('Piedra')">🪨 Piedra</button>
-    <button class="option-btn" onclick="play('Papel')">📄 Papel</button>
-    <button class="option-btn" onclick="play('Tijera')">✂️ Tijera</button>
-    <button class="option-btn" onclick="play('Spock')">🖖 Spock</button>
-    <button class="option-btn" onclick="play('Lagarto')">🦎 Lagarto</button>
+    <button class="option-btn" onclick="play('Piedra')">🪨<span>Piedra</span></button>
+    <button class="option-btn" onclick="play('Papel')">📄<span>Papel</span></button>
+    <button class="option-btn" onclick="play('Tijera')">✂️<span>Tijera</span></button>
+    <button class="option-btn" onclick="play('Spock')">🖖<span>Spock</span></button>
+    <button class="option-btn" onclick="play('Lagarto')">🦎<span>Lagarto</span></button>
+  </div>
+  <div class="scoreboard" style="margin-bottom:10px;">
+    <span style="color:#6366f1;">Tú</span>: <span id="userScore">0</span>
+    <span style="color:#38bdf8;font-weight:400;">|</span>
+    <span style="color:#f59e42;">CPU</span>: <span id="cpuScore">0</span>
   </div>
   <div class="result" id="result">Elige una opción para jugar</div>
-  <div class="scoreboard">
-    Tú: <span id="userScore">0</span> |
-    CPU: <span id="cpuScore">0</span>
-  </div>
   <div class="reason" id="reason"></div>
   <div id="img-result"></div>
-
-    <script src="../js/main.js"></script>
+  <footer style="margin-top:40px; color:#fff; font-size:0.95rem; opacity:0.7;">
+  </footer>
+  <script src="../js/main.js"></script>
 </body>
-</html>
+</html> 
