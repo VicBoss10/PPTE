@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, Papel, Tijera, Spock, Lagarto</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <h1>Piedra, Papel, Tijera, Spock, Lagarto</h1>
+  <div class="options">
+    <button class="option-btn" onclick="play('Piedra')">🪨 Piedra</button>
+    <button class="option-btn" onclick="play('Papel')">📄 Papel</button>
+    <button class="option-btn" onclick="play('Tijera')">✂️ Tijera</button>
+    <button class="option-btn" onclick="play('Spock')">🖖 Spock</button>
+    <button class="option-btn" onclick="play('Lagarto')">🦎 Lagarto</button>
+  </div>
+  <div class="result" id="result">Elige una opción para jugar</div>
+  <div class="scoreboard">
+    Tú: <span id="userScore">0</span> |
+    CPU: <span id="cpuScore">0</span>
+  </div>
+  <div class="reason" id="reason"></div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "./public/js",
+    "target": "es2016",//Js version to copilate
+    "module": "ES2020",
+    "strict":true
+  }
+}
